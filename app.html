@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App</title>
+    <style>
+        body{
+            background-color: tomato;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis, nostrum! Asperiores fuga sunt ratione nostrum voluptate blanditiis officiis tenetur nobis vel autem libero deleniti, reiciendis dolorum eos alias beatae labore.
+    </p>
+    <script>
+        const paragraph = document.querySelector('p');
+        const paragraphText = paragraph.textContent;
+        alert(paragraphText);
+        const paragraphArray = paragraphText.split(' ');
+        console.log(paragraphArray)
+        // filter space
+        console.log(paragraphArray.filter(word => word !== ' ' && word !== '\n'))
+    </script>
+</body>
+</html>
